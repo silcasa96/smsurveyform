@@ -1,0 +1,95 @@
+@import url('https://fonts.google.com/css2?family=Lato:wght@100;300;400;700&diplay=swap');
+
+* {
+    box-sizing: border-box;
+} 
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(344deg,
+         rgba(0,198,210,0.5) 20%,
+         rgba(36,242,255,0.5) 22%, 
+         rgba(0,212,255,0.3) 10%),
+         url(img/wwy.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+body {
+    font-family: Lato, Helvetica;
+    min-height: 2000px;
+}
+
+h1, p {
+    text-align: center;
+    color: red;
+}
+
+form {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 15px 30px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    display: block;
+    margin-top: 5px;
+    height: 35px;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    font-family: Haettenschweiler;
+}
+
+input[type="radio"] {
+    margin-top: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    color: ivory;
+    background-color: green;
+}
+
+/*.kotak {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    position: relative;
+    z-index: 1;
+}
+
+.kotak::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;
+    transform: translateX(100px);
+    position: relative;
+    z-index: -1;
+    opacity: 0.7;
+}

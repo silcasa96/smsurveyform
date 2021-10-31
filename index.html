@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Survey Employee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h1 id="title">SM Survey Employee</h1>
+    <p id="description"><b>Please fill the form, thank you</b>.</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required/>
+        </label>
+
+        <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required/>
+        </label>
+
+        <label for="number" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="How Old Are You?" min="18" max="50"/>
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+        Do You Know your company well?
+        <select id="dropdown">
+            <option value="">Yes</option>
+            <option value="">No</option>
+        </select>
+        </label>
+
+        <label for="employee" id="employee-label">
+        Who do you think the best employee?</label>
+        <input type="radio" name="employee" value="1" checked> Irene<br>
+        <input type="radio" name="employee" value="2" checked> Seulgi<br>
+        <input type="radio" name="employee" value="3" checked> Wendy<br>
+        <input type="radio" name="employee" value="4" checked> Joy<br>
+        <input type="radio" name="employee" value="5" checked> Silca<br>
+        
+        <br></br>
+        <label for="employee" id="employee-label">
+        Who do you think the worst employee?</label>
+        <input type="checkbox" value="Irene"> Irene<br>
+        <input type="checkbox" value="Seulgi"> Seulgi<br>
+        <input type="checkbox" value="Wendy"> Wendy<br>
+        <input type="checkbox" value="Joy"> Joy<br>
+        <input type="checkbox" value="Silca"> Silca<br>
+
+        <br></br>
+        <label for="comments" id="comments-label">
+        Any Comments or Suggestions?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
